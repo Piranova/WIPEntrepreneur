@@ -4,7 +4,8 @@ class GreetUser extends React.Component {
   render () {
     return (
       <React.Fragment>
-        Hello, {this.props.name} <br/>
+        Hello, {this.props.name} 
+        LastName : {this.props.lastName} 
         This is react + rails!
       </React.Fragment>
     );
@@ -12,6 +13,7 @@ class GreetUser extends React.Component {
 }
 
 GreetUser.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
+  lastName: PropTypes.string
 };
 export default GreetUser
